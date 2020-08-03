@@ -36,3 +36,20 @@
     font-weight: bold;
     color: #063A6C;
 }
+.dropdown {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .imageCol {
+        padding: 10px;
+        background-color: white;
+        width: 350px;
+    }
+    .banner, .links {
+        display: none;
+    }
+    .dropdown {
+        display: block;
+    }
+}
