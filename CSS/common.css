@@ -1,0 +1,27 @@
+.row.header {
+}
+.links {
+    align-self: stretch;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+.imageCol {
+    padding: 10px;
+    background-color: white;
+    width: 175px;
+}
+.imageCol img{
+    width: 100%;
+    height: auto;
+}
+.largeLink .link {
+    text-align: center;
+    align-self: center;
+    padding-top: 15px;
+}
+.largeLink .link a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #063A6C;
+}
