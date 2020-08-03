@@ -1,3 +1,6 @@
+.row.header {
+    justify-content: space-around;
+}
 .banner {
     display: flex;
     justify-content: flex-end;
@@ -41,15 +44,59 @@
 }
 
 @media screen and (max-width: 767px) {
+    .row.header {
+        justify-content: center;
+    }
     .imageCol {
         padding: 10px;
         background-color: white;
-        width: 350px;
+        width: 300px;
     }
     .banner, .links {
         display: none;
     }
     .dropdown {
         display: block;
+        width: 100%;
     }
+    .dropdown .linkSelector, .dropdown .dropdown-menu {
+        width: 100%;
+    }
+    .dropdown .linkSelector {
+        text-align: left;
+        background-color: #063A6C;
+        font-size: larger;
+    }
+    .dropdown .linkSelector:active {
+        background-color: #063A6C;
+    }
+    .dropdown .dropdown-menu {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    /*Override bootstrap stuff*/
+    .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+		color: white;
+		background-color: #063A6C;
+		text-shadow: 1px 1px black;
+		border: none;
+    }
+    .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+		box-shadow: none;
+    }
+    .btn-secondary.focus, .btn-secondary:focus, .btn-secondary.hover, .btn-secondary:hover {
+		color: white;
+		background-color: #063A6C;
+		text-shadow: 1px 1px black;
+		border: none;
+		box-shadow: none;
+	}
+    
+	.dropdown-item.active, .dropdown-item:active, .dropdown-item:hover, .dropdown-item:focus {
+		color: white;
+		background-color: #063A6C;
+        text-shadow: 1px 1px black;
+	}
+
 }
