@@ -19,6 +19,8 @@
     display: flex;
     justify-content: flex-end;
     padding-top: 10px;
+    padding-right: 0;
+    padding-left: 0;
 }
 .imageCol {
     padding: 10px;
@@ -29,10 +31,16 @@
     width: 100%;
     height: auto;
 }
+.row .largeLink {
+    width:100%;
+}
 .largeLink .link {
     text-align: center;
-    align-self: center;
+    align-self: flex-end;
     padding-top: 15px;
+}
+.largeLink .link h3 {
+    padding-bottom: 5px;
 }
 .largeLink .link h3.selected {
     border-bottom: 5px solid #063A6C;
@@ -47,6 +55,27 @@
 }
 .content {
     margin-top: 25px;
+}
+
+.footer {
+    margin-top: 15px;
+    padding-top: 30px;
+    background-color: #333333;
+}
+.footer-section {
+    padding: 0;
+}
+.footer-section h2, .footer-section li a {
+    color: white;
+}
+.footer-section li {
+    display: block;
+}
+.footer-section ul {
+    padding-left: 10px;
+}
+.footer-section li a .fas {
+    padding-right: 5px;
 }
 
 @media screen and (max-width: 767px) {
