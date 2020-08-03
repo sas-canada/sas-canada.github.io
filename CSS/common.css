@@ -59,11 +59,19 @@
 
 .footer {
     margin-top: 15px;
-    padding-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 5px;
     background-color: #333333;
 }
 .footer-section {
     padding: 0;
+}
+.footer-section:first-child {
+    padding-right: 30px;
+}
+.footer-section:last-child {
+    padding-left: 30px;
+    border-left: 2px solid white;
 }
 .footer-section h2, .footer-section li a {
     color: white;
@@ -108,6 +116,19 @@
     .dropdown .dropdown-menu {
         font-weight: bold;
         font-size: 18px;
+    }
+
+    .row.footer .row {
+        display: block;
+    }
+
+    .footer-section, .footer-section:last-child {
+        padding-left: 10px;
+        border-left: none;
+    }
+    .footer-section:last-child {
+        border-top: 2px solid white;
+        padding-top: 10px;
     }
 
     /*Override bootstrap stuff*/
