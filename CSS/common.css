@@ -1,4 +1,15 @@
-.row.header {
+.banner {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+    background-color: #063A6C;
+}
+.banner a {
+    color: white;
+    padding-right: 15px;
+}
+.banner a:last-child {
+    padding-right: 5px;
 }
 .links {
     align-self: stretch;
