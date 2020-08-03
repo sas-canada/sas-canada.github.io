@@ -34,6 +34,9 @@
     align-self: center;
     padding-top: 15px;
 }
+.largeLink .link h3.selected {
+    border-bottom: 5px solid #063A6C;
+}
 .largeLink .link a {
     font-size: 18px;
     font-weight: bold;
@@ -41,6 +44,9 @@
 }
 .dropdown {
     display: none;
+}
+.content {
+    margin-top: 25px;
 }
 
 @media screen and (max-width: 767px) {

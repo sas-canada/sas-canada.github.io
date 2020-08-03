@@ -27,9 +27,17 @@ $(document).ready(function() {
        if($(".footer").length > 0) {
            loadIn('./components/footer.html', 'row footer');
        }
-       /*if($('.link a').length > 0) {
-           $('.link a').removeClass('selected');
-           $(`.link a.${curPage}`).addClass('selected');
-       }*/
+       if($('.header .link a').length > 0) {
+           $('.header .link a').parent().removeClass('selected');
+           $(`.header .link a.${curPage}`).parent().addClass('selected');
+	   }
+	   let titleList = curPage.split('-');
+	   for(let i = 0; i < titleList.length; i++) {
+		   if(titleList[i] !== 'and') {
+			   titleList[i] = titleList[i].charAt(0).toUpperCase() + titleList[i].slice(1);
+		   }
+	   }
+	   let title = titleList.join(' ');
+	   $('#dropdownMenuButton').html(title);
     }
 })
