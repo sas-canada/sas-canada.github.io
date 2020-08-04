@@ -75,9 +75,11 @@
 }
 .footer-section h2, .footer-section li a {
     color: white;
+    font-weight: bold;
 }
 .footer-section li {
     display: block;
+    padding: 10px 0;
 }
 .footer-section ul {
     padding-left: 10px;
