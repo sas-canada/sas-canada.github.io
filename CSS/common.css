@@ -11,6 +11,9 @@
     color: white;
     padding-right: 15px;
 }
+.banner a .fas {
+    padding-right: 5px;
+}
 .banner a:last-child {
     padding-right: 5px;
 }
